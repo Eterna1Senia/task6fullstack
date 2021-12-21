@@ -13,11 +13,23 @@
           media="screen and (min-width:480px) and (max-width:767px)"/>
     <link rel="stylesheet/less" type="text/css" href="smallmob.less"
           media="screen and (max-width:479px)"/>
-
+	
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/less'>
-
+	<script>
+        var startTime = new Date;
+        var timeEnd1;
+        var timeEnd2;
+        document.addEventListener("DOMContentLoaded", () => {
+            timeEnd1 = new Date;
+            console.log( "DOMContentLoaded" + (timeEnd1 - startTime) + " ms");
+        });
+        window.onload = function() {
+            timeEnd2 = new Date;
+            console.log("load " + (timeEnd2 - startTime) + " ms"  );
+        };
+    </script>
 
     <title>4 задание</title>
 </head>
