@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: white;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body .container {
+  max-width: 1180px;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+body header {
+  width: 100%;
+  height: 115px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: 1000;
+}
+
+body header .header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header .header_inner .logo {
+  width: 123px;
+  height: 123px;
+  margin-left: -30px;
+}
+
+body header .header_inner nav ul {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+}
+
+body header .header_inner nav ul li {
+  margin-left: 26px;
+  list-style-type: none;
+}
+
+body header .header_inner nav ul li a {
+  text-decoration: none;
+}
+
+body .intro {
+  height: 880px;
+  background: #31344e url('img/main image.png') no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 1600px) {
+  body .intro {
+    background-size: cover;
+  }
+}
+
+body .intro .intro_inner {
+  width: 100%;
+  max-width: 970px;
+  margin: auto;
+  text-align: center;
+}
+
+body .intro .intro_inner h1 {
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+body .intro .intro_inner p {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.75;
+  margin-bottom: 0px;
+}
+
+body .intro .intro_inner button {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21.2px;
+  color: white;
+  padding: 18px 78px 24px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+  background: none;
+  margin-bottom: 20px;
+}
+
+body .intro .intro_inner button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+body .intro .intro_inner button a {
+  text-decoration: none;
+}
+
+body main .features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+body main .features .features_item {
+  width: 33.33333%;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+body main .features .features_item h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+  position: relative;
+  font-weight: 800;
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+body main .features .features_item h2::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 88px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom: 1px solid #f57365;
+}
+
+body main .features .features_item p {
+  align-self: center;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+}
+
+body main .containerApp {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body main .containerApp .introducingApp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000;
+}
+
+body main .containerApp .introducingApp .col-left {
+  flex-basis: 50%;
+  position: relative;
+  background: url("img/iphone.png") right 14px no-repeat;
+  background-size: 540px 780px;
+  height: 780px;
+  margin-top: 102px;
+  overflow: hidden;
+  margin-right: 58px;
+}
+
+body main .containerApp .introducingApp .col-right {
+  flex-basis: 50%;
+  margin-top: 185px;
+  margin-left: 58px;
+}
+
+body main .containerApp .introducingApp .col-right h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+  position: relative;
+  font-weight: 800;
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+body main .containerApp .introducingApp .col-right h2::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 88px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  border-bottom: 1px solid #f57365;
+}
+
+body main .containerApp .introducingApp .col-right p {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 24px;
+  font-size: 15px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  text-align: left;
+  color: #777;
+}
+
+body main .containerApp .introducingApp .col-right .apps {
+  width: 280px;
+}
+
+body main .containerApp .introducingApp .col-right .apps img {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+
+body main .containerApp .introducingApp .col-right .apps img:hover {
+  opacity: .9;
+}
+
+body main .review {
+  background: #31344e url('img/RectangleBack.png') no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 100% 100%;
+}
+
+body main .review .slider {
+  max-width: 1180px;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 0px;
+  background: #4a3949 url("img/back.png") 70% 35px no-repeat;
+  background-size: contain;
+  height: 460px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body main .review .slider image {
+  display: block;
+  position: absolute;
+  width: 187px;
+  height: auto;
+  left: 50%;
+  top: 0;
+  transform: translate(-40%, -2%);
+}
+
+body main .review .slider h2 {
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: 'Lato Hairline';
+  font-weight: lighter;
+  font-style: normal;
+  opacity: 0.5;
+}
+
+body main .review .slider p {
+  margin-top: 15px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: 'Lato Hairline';
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+body main .recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+body main .recipes .Text_brows {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  align-self: center;
+  position: relative;
+  font-weight: 800;
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+body main .recipes .Text_brows::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 88px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom: 1px solid #f57365;
+}
+
+body main .recipes .Photocontain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body main .recipes .Photocontain .kitchen_item {
+  position: relative;
+  box-sizing: border-box;
+  width: 20%;
+  height: auto;
+}
+
+body main .recipes .Photocontain .kitchen_item img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body main .recipes .Photocontain .kitchen_item p {
+  font-family: 'Times New Roman';
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+body main .recipes .Photocontain .kitchen_item h2 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -65%);
+  font-size: 36px;
+  line-height: 38px;
+  color: white;
+}
+
+body main .counterCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-width: 1180px;
+  align-items: center;
+  margin: 50px auto;
+}
+
+body main .counterCont .counter {
+  text-align: center;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body main .counterCont .counter h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+body main .counterCont .counter p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 300;
+  color: #000;
+  opacity: 0.5;
+}
+
+body footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body footer .copy {
+  display: flex;
+  flex-direction: row;
+}
+
+body footer .copy p {
+  color: #8b8b8b;
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+}
+
+body footer .copy h2 {
+  color: #8B8B8B;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-align: right;
+  margin: 0;
+}
+
+a:-webkit-any-link {
+  color: #FFFFFF;
+}

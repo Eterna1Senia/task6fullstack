@@ -1,0 +1,195 @@
+body {
+  width: 100%;
+}
+
+body .container {
+  max-width: 80%;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+body header {
+  width: 100%;
+  height: 115px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: 1000;
+}
+
+body header .header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header .header_inner .logo {
+  width: 123px;
+  height: 123px;
+  margin-left: -30px;
+}
+
+body header .header_inner nav ul {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+}
+
+body header .header_inner nav ul li {
+  margin-left: 26px;
+  list-style-type: none;
+}
+
+body header .header_inner nav ul li a {
+  display: none;
+  text-decoration: none;
+}
+
+body .intro .intro_inner h1 {
+  font-size: 60px;
+}
+
+body .intro .intro_inner p {
+  font-size: 25px;
+}
+
+body main .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body main .features .features_item {
+  width: 100%;
+}
+
+body main .containerApp {
+  justify-content: space-between;
+}
+
+body main .containerApp .introducingApp .col-left {
+  display: none;
+}
+
+body main .containerApp .introducingApp .col-right {
+  margin-left: 0;
+  flex-basis: 100%;
+  margin-top: 40px;
+}
+
+body main .containerApp .introducingApp .col-right h2 {
+  font-size: 14px;
+}
+
+body main .containerApp .introducingApp .col-right p {
+  font-size: 12px;
+}
+
+body main .review .slider {
+  width: 80%;
+}
+
+body main .review .slider h2 {
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Lato Hairline';
+  font-weight: lighter;
+  font-style: normal;
+  opacity: 0.5;
+}
+
+body main .review .slider p {
+  margin-top: 15px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: 'Lato Hairline';
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+body main .recipes .Photocontain .kitchen_item {
+  width: 100%;
+  height: auto;
+}
+
+body main .recipes .Photocontain .kitchen_item img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body main .recipes .Photocontain .kitchen_item p {
+  font-family: 'Times New Roman';
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+body main .recipes .Photocontain .kitchen_item h2 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -65%);
+  font-size: 25px;
+  line-height: 38px;
+  color: white;
+}
+
+body main .counterCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+body main .counterCont .counter {
+  flex-basis: 25%;
+  margin-top: 60px;
+}
+
+body footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+body footer .copy {
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body footer .copy p {
+  text-align: center;
+}
+
+body footer .copy h2 {
+  text-align: center;
+}
+
+
