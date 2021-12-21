@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+}
+
+body .container {
+  max-width: 750px;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+body main .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body main .features .features_item {
+  width: 100%;
+}
+
+body main .containerApp {
+  justify-content: space-between;
+}
+
+body main .containerApp .introducingApp .col-left {
+  display: none;
+}
+
+body main .containerApp .introducingApp .col-right {
+  flex-basis: 100%;
+  margin-top: 40px;
+}
+
+body main .review {
+  background: #31344e url('img/RectangleBack.png') no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 100% 100%;
+}
+
+body main .review .slider {
+  max-width: 750px;
+}
+
+body main .recipes .Photocontain .kitchen_item {
+  width: 50%;
+  height: auto;
+}
+
+body main .recipes .Photocontain .kitchen_item img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body main .counterCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+body main .counterCont .counter {
+  flex-basis: 25%;
+  margin-top: 60px;
+}
